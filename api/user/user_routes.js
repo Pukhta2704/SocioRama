@@ -11,7 +11,7 @@ const unfollow_user_controller = require('./controllers/follow_unfollow_controll
 const get_profile_controller = require('./controllers/get_profile_controller');
 const search_users_controllers = require('./controllers/search_users_controllers');
 
-router.get('/profile/:id', authenticate_user, get_profile_controller);
+router.get('/getprofile/:id', authenticate_user, get_profile_controller);
 
 router.put('/follow', authenticate_user, follow_user_controller);
 
